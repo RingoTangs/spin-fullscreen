@@ -1,6 +1,9 @@
 {
   "name": "@ringotangs/spin-fullscreen-vue",
-  "version": "1.0.0",
+  "version": "0.0.1",
+  "publishConfig": {
+    "access": "public"
+  },
   "packageManager": "pnpm@10.14.0",
   "description": "vue3 spin fullscreen loader",
   "author": "RingoTangs",
