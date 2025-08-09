@@ -2,9 +2,13 @@
   "name": "@ringotangs/spin-fullscreen-monorepo",
   "private": "true",
   "packageManager": "pnpm@10.14.0",
-  "author": "",
-  "license": "ISC",
-  "keywords": [],
+  "author": "RingoTangs",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RingoTangs/spin-fullscreen"
+  },
+  "keywords": ["vue", "react", "loader", "spin", "fullscreen"],
   "engines": {
     "node": ">=20.19.4"
   },
