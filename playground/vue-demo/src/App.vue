@@ -4,7 +4,8 @@ import SpinFullscreen from '@ringotangs/spin-fullscreen-vue'
 const handleClick = () => {
  SpinFullscreen.show()
  window.setTimeout(() => {
-  //  SpinFullscreen.hide()
+   SpinFullscreen.hide()
+   console.log('hide')
  }, 3000)
 }
 
