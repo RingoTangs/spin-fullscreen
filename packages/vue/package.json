@@ -8,6 +8,14 @@
   "description": "vue3 spin fullscreen loader",
   "author": "RingoTangs",
   "license": "MIT",
+  "homepage": "https://github.com/RingoTangs/spin-fullscreen",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RingoTangs/spin-fullscreen"
+  },
+  "bugs": {
+    "url": "https://github.com/RingoTangs/spin-fullscreen/issues"
+  },
   "keywords": ["vue", "loader", "spin", "fullscreen"],
   "exports": {
     ".": {
