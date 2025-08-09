@@ -1,0 +1,39 @@
+@import './DotSpinner.css';
+
+#rt-spin-fullscreen {
+  --rt-color: #a4f5ee;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s;
+}
+
+#rt-spin-fullscreen.rt-loading-fullscreen-show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.rt-spin-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.rt-spin-tips {
+  padding-top: 15px;
+  color: var(--rt-color);
+}

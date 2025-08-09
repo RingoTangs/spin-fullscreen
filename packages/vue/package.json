@@ -1,0 +1,53 @@
+{
+  "name": "@ringotangs/spin-fullscreen-vue",
+  "version": "1.0.0",
+  "packageManager": "pnpm@10.14.0",
+  "description": "vue3 spin fullscreen loader",
+  "author": "RingoTangs",
+  "license": "MIT",
+  "keywords": ["vue", "loader", "spin", "fullscreen"],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./*": "./*"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "rmdist": "rimraf dist",
+    "rmdistcss": "rimraf dist/style.css",
+
+    "predev": "npm run rmdist",
+    "dev": " cross-env NODE_ENV=dev rollup -c -w",
+
+    "predevcss": "npm run rmdistcss",
+    "devcss": "cross-env NODE_ENV=dev postcss src/style.css -o dist/style.css -w",
+
+    "prebuild": "npm run rmdist",
+    "build": "cross-env NODE_ENV=prod rollup -c",
+
+    "prebuildcss": "npm run rmdistcss",
+    "buildcss": "cross-env NODE_ENV=prod postcss src/style.css -o dist/style.css",
+
+    "build-all": "npm run build && npm run buildcss"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@vue/babel-plugin-jsx": "^1.4.0",
+    "vue": "^3.5.18"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 11"
+  ]
+}
